@@ -45,6 +45,11 @@ Resources:
           Properties:
             Path: /
             Method: post
+      VpcConfig:
+        SecurityGroupIds:
+          - sg-0df3777826e6e2e74
+        SubnetIds:
+          - subnet-085952a4a73c5a3db
   LambdaExecutionRole:
     Description: Creating service role in IAM for AWS Lambda
     Type: AWS::IAM::Role
